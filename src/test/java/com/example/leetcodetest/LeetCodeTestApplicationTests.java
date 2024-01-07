@@ -13,15 +13,23 @@ import static com.example.leetcodetest.Day2.canPlaceFlowers;
 import static com.example.leetcodetest.Day2.kidsWithCandies;
 import static com.example.leetcodetest.Day3.reverseVowels;
 import static com.example.leetcodetest.Day3.reverseWords;
+import static com.example.leetcodetest.Day4.increasingTriplet;
+import static com.example.leetcodetest.Day4.productExceptSelf;
 
 @SpringBootTest
 class LeetCodeTestApplicationTests {
 
     @Test
+    void Day4test() {
+      /*  productExceptSelf(new int[]{1,2,3,4,5});*/
+        System.out.println(increasingTriplet(new int[]{1, 2, 3}));
+    }
+
+    @Test
     void Day3test() {
         /*System.out.println(reverseVowels("hello"));*/
         //reverseWords(" hello world ");
-        System.out.println( reverseWords("the sky is blue"));
+        System.out.println(reverseWords("the sky is blue"));
     }
 
     @Test
@@ -29,7 +37,7 @@ class LeetCodeTestApplicationTests {
        /* int[] ints = {10, 9, 9, 4, 5};
         kidsWithCandies(ints,4);*/
 
-        System.out.println(canPlaceFlowers(new int[]{1,0,0,0,0,1},2));
+        System.out.println(canPlaceFlowers(new int[]{1, 0, 0, 0, 0, 1}, 2));
     }
 
     @Test
