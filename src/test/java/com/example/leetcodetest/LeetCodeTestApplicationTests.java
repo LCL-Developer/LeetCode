@@ -15,9 +15,31 @@ import static com.example.leetcodetest.Day3.reverseVowels;
 import static com.example.leetcodetest.Day3.reverseWords;
 import static com.example.leetcodetest.Day4.increasingTriplet;
 import static com.example.leetcodetest.Day4.productExceptSelf;
+import static com.example.leetcodetest.Day5.compress;
+import static com.example.leetcodetest.Day5.moveZeroes;
+import static com.example.leetcodetest.Day6.isSubsequence;
+import static com.example.leetcodetest.Day7.findMaxAverage;
 
 @SpringBootTest
 class LeetCodeTestApplicationTests {
+
+    @Test
+    void Day7test() {
+        System.out.println(findMaxAverage(new int[]{1, 12, -5, -6, 50, 3}, 4));
+
+    }
+
+    @Test
+    void Day6test() {
+        isSubsequence("abc","ahbgdc");
+
+    }
+
+    @Test
+    void Day5test() {
+      /*  compress(new char[]{'a','b','b','b','c'});
+        moveZeroes(new int[]{0,1,2,0,3,0,6});*/
+    }
 
     @Test
     void Day4test() {
