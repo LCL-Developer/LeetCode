@@ -19,9 +19,16 @@ import static com.example.leetcodetest.Day5.compress;
 import static com.example.leetcodetest.Day5.moveZeroes;
 import static com.example.leetcodetest.Day6.isSubsequence;
 import static com.example.leetcodetest.Day7.findMaxAverage;
+import static com.example.leetcodetest.Day9.largestAltitude;
 
 @SpringBootTest
 class LeetCodeTestApplicationTests {
+
+    @Test
+    void Day9test() {
+        System.out.println(largestAltitude(new int[]{-4,-3,-2,-1,4,3,2}));
+
+    }
 
     @Test
     void Day7test() {
