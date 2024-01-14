@@ -9,6 +9,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import static com.example.leetcodetest.Day1.*;
+import static com.example.leetcodetest.Day10.pivotIndex;
+import static com.example.leetcodetest.Day11.closeStrings;
+import static com.example.leetcodetest.Day11.uniqueOccurrences;
+import static com.example.leetcodetest.Day12.removeStars;
 import static com.example.leetcodetest.Day2.canPlaceFlowers;
 import static com.example.leetcodetest.Day2.kidsWithCandies;
 import static com.example.leetcodetest.Day3.reverseVowels;
@@ -23,6 +27,22 @@ import static com.example.leetcodetest.Day9.largestAltitude;
 
 @SpringBootTest
 class LeetCodeTestApplicationTests {
+
+    @Test
+    void Day12test() {
+        System.out.println(removeStars("leet**cod*e"));
+    }
+
+    @Test
+    void Day11test() {
+        System.out.println(uniqueOccurrences(new int[]{1,2,2,1,1,3}));
+        closeStrings("abc","bca");
+    }
+
+    @Test
+    void Day10test() {
+        System.out.println(pivotIndex(new int[]{1,7,3,6,5,6}));
+    }
 
     @Test
     void Day9test() {
