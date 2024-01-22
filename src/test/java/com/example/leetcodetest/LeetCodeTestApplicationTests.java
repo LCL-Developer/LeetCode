@@ -13,6 +13,9 @@ import static com.example.leetcodetest.Day10.pivotIndex;
 import static com.example.leetcodetest.Day11.closeStrings;
 import static com.example.leetcodetest.Day11.uniqueOccurrences;
 import static com.example.leetcodetest.Day12.removeStars;
+import static com.example.leetcodetest.Day13.decodeString;
+import static com.example.leetcodetest.Day14.predictPartyVictory;
+import static com.example.leetcodetest.Day15.deleteMiddle;
 import static com.example.leetcodetest.Day2.canPlaceFlowers;
 import static com.example.leetcodetest.Day2.kidsWithCandies;
 import static com.example.leetcodetest.Day3.reverseVowels;
@@ -29,24 +32,49 @@ import static com.example.leetcodetest.Day9.largestAltitude;
 class LeetCodeTestApplicationTests {
 
     @Test
+    void Day15test() {
+        //创建链表，这里为了方便明了，没有去封装方法
+        Day15.ListNode head = new Day15.ListNode(1,
+                new Day15.ListNode(2,
+                        new Day15.ListNode(3,
+                                new Day15.ListNode(4,
+                                        new Day15.ListNode(5,
+                                                new Day15.ListNode(6,
+                                                        new Day15.ListNode(7)))))));
+
+        deleteMiddle(head);
+    }
+
+    @Test
+    void Day14test() {
+        System.out.println(predictPartyVictory("DDRRR"));
+    }
+
+    @Test
+    void Day13test() {
+        System.out.println(decodeString("3[z]2[2[y]pq4[2[jk]e1[f]]]ef"));
+        System.out.println(decodeString("3[a]2[bc]"));
+    }
+
+    @Test
     void Day12test() {
         System.out.println(removeStars("leet**cod*e"));
     }
 
     @Test
     void Day11test() {
-        System.out.println(uniqueOccurrences(new int[]{1,2,2,1,1,3}));
-        closeStrings("abc","bca");
+        System.out.println(uniqueOccurrences(new int[]{1, 2, 2, 1, 1, 3}));
+        closeStrings("abc", "bca");
     }
 
     @Test
     void Day10test() {
-        System.out.println(pivotIndex(new int[]{1,7,3,6,5,6}));
+        System.out.println(pivotIndex(new int[]{1, 7, 3, 6, 5, 6}));
     }
 
     @Test
     void Day9test() {
-        System.out.println(largestAltitude(new int[]{-4,-3,-2,-1,4,3,2}));
+        System.out.println(largestAltitude(new int[]{-4, -3, -2, -1, 4, 3, 2}));
 
     }
 
@@ -58,7 +86,7 @@ class LeetCodeTestApplicationTests {
 
     @Test
     void Day6test() {
-        isSubsequence("abc","ahbgdc");
+        isSubsequence("abc", "ahbgdc");
 
     }
 
@@ -70,7 +98,7 @@ class LeetCodeTestApplicationTests {
 
     @Test
     void Day4test() {
-      /*  productExceptSelf(new int[]{1,2,3,4,5});*/
+        /*  productExceptSelf(new int[]{1,2,3,4,5});*/
         System.out.println(increasingTriplet(new int[]{1, 2, 3}));
     }
 
